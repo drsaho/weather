@@ -1,12 +1,14 @@
 //Apikey from openweather
 const apiKey = '46d353ce29765dbac0983953dafd4b19';
 
+
 document.getElementById('city-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const city = document.getElementById('city-input').value;
     getWeatherData(city);
     updateSearchHistory(city);
 });
+
 
 //accesing weather data
 
@@ -20,6 +22,8 @@ function getWeatherData(city) {
         .then(response => response.json())
         .then(data => displayForecast(data));
 }
+
+
 //getting the current weather from api
 function displayCurrentWeather(data) {
     const currentWeather = document.getElementById('current-weather');
@@ -33,6 +37,8 @@ function displayCurrentWeather(data) {
         </div>
     `;
 }
+
+
 
  //getting 5 day forecast
 function displayForecast(data) {
