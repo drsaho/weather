@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    text-align: center;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.weatherContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.searchResults {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.currentWeather {
+    flex: 1;
+    padding: 20px;
+}
+
+#city-form {
+    margin-bottom: 20px;
+}
+
+#search-history button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.weather-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#forecast .weather-card {
+    display: inline-block;
+    width: 18%;
+    margin: 1%;
+}
